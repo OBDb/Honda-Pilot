@@ -1,0 +1,250 @@
+command_id: DB33.010D
+can_id_format: TWENTY_NINE_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 18DAF11003410D00
+  expected_values:
+    VSS: 0
+- response: 18DAF11003410D01
+  expected_values:
+    VSS: 1
+- response: 18DAF11003410D02
+  expected_values:
+    VSS: 2
+- response: 18DAF11003410D03
+  expected_values:
+    VSS: 3
+- response: 18DAF11003410D04
+  expected_values:
+    VSS: 4
+- response: 18DAF11003410D05
+  expected_values:
+    VSS: 5
+- response: 18DAF11003410D07
+  expected_values:
+    VSS: 7
+- response: 18DAF11003410D08
+  expected_values:
+    VSS: 8
+- response: 18DAF11003410D09
+  expected_values:
+    VSS: 9
+- response: 18DAF11003410D0A
+  expected_values:
+    VSS: 10
+- response: 18DAF11003410D0B
+  expected_values:
+    VSS: 11
+- response: 18DAF11003410D0C
+  expected_values:
+    VSS: 12
+- response: 18DAF11003410D0D
+  expected_values:
+    VSS: 13
+- response: 18DAF11003410D0E
+  expected_values:
+    VSS: 14
+- response: 18DAF11003410D10
+  expected_values:
+    VSS: 16
+- response: 18DAF11003410D12
+  expected_values:
+    VSS: 18
+- response: 18DAF11003410D14
+  expected_values:
+    VSS: 20
+- response: 18DAF11003410D15
+  expected_values:
+    VSS: 21
+- response: 18DAF11003410D16
+  expected_values:
+    VSS: 22
+- response: 18DAF11003410D1A
+  expected_values:
+    VSS: 26
+- response: 18DAF11003410D27
+  expected_values:
+    VSS: 39
+- response: 18DAF11003410D2A
+  expected_values:
+    VSS: 42
+- response: 18DAF11003410D2C
+  expected_values:
+    VSS: 44
+- response: 18DAF11003410D2D
+  expected_values:
+    VSS: 45
+- response: 18DAF11003410D31
+  expected_values:
+    VSS: 49
+- response: 18DAF11003410D40
+  expected_values:
+    VSS: 64
+- response: 18DAF11003410D41
+  expected_values:
+    VSS: 65
+- response: 18DAF11003410D48
+  expected_values:
+    VSS: 72
+- response: 18DAF11E03410D00
+  expected_values:
+    VSS: 0
+- response: 18DAF11E03410D01
+  expected_values:
+    VSS: 1
+- response: 18DAF11E03410D02
+  expected_values:
+    VSS: 2
+- response: 18DAF11E03410D03
+  expected_values:
+    VSS: 3
+- response: 18DAF11E03410D04
+  expected_values:
+    VSS: 4
+- response: 18DAF11E03410D05
+  expected_values:
+    VSS: 5
+- response: 18DAF11E03410D07
+  expected_values:
+    VSS: 7
+- response: 18DAF11E03410D08
+  expected_values:
+    VSS: 8
+- response: 18DAF11E03410D09
+  expected_values:
+    VSS: 9
+- response: 18DAF11E03410D0A
+  expected_values:
+    VSS: 10
+- response: 18DAF11E03410D0B
+  expected_values:
+    VSS: 11
+- response: 18DAF11E03410D0C
+  expected_values:
+    VSS: 12
+- response: 18DAF11E03410D0D
+  expected_values:
+    VSS: 13
+- response: 18DAF11E03410D0E
+  expected_values:
+    VSS: 14
+- response: 18DAF11E03410D10
+  expected_values:
+    VSS: 16
+- response: 18DAF11E03410D12
+  expected_values:
+    VSS: 18
+- response: 18DAF11E03410D14
+  expected_values:
+    VSS: 20
+- response: 18DAF11E03410D15
+  expected_values:
+    VSS: 21
+- response: 18DAF11E03410D16
+  expected_values:
+    VSS: 22
+- response: 18DAF11E03410D1A
+  expected_values:
+    VSS: 26
+- response: 18DAF11E03410D27
+  expected_values:
+    VSS: 39
+- response: 18DAF11E03410D2A
+  expected_values:
+    VSS: 42
+- response: 18DAF11E03410D2C
+  expected_values:
+    VSS: 44
+- response: 18DAF11E03410D2D
+  expected_values:
+    VSS: 45
+- response: 18DAF11E03410D31
+  expected_values:
+    VSS: 49
+- response: 18DAF11E03410D40
+  expected_values:
+    VSS: 64
+- response: 18DAF11E03410D41
+  expected_values:
+    VSS: 65
+- response: 18DAF11E03410D48
+  expected_values:
+    VSS: 72
+- response: 18DAF1EF03410D00
+  expected_values:
+    VSS: 0
+- response: 18DAF1EF03410D01
+  expected_values:
+    VSS: 1
+- response: 18DAF1EF03410D02
+  expected_values:
+    VSS: 2
+- response: 18DAF1EF03410D03
+  expected_values:
+    VSS: 3
+- response: 18DAF1EF03410D04
+  expected_values:
+    VSS: 4
+- response: 18DAF1EF03410D05
+  expected_values:
+    VSS: 5
+- response: 18DAF1EF03410D07
+  expected_values:
+    VSS: 7
+- response: 18DAF1EF03410D09
+  expected_values:
+    VSS: 9
+- response: 18DAF1EF03410D0A
+  expected_values:
+    VSS: 10
+- response: 18DAF1EF03410D0B
+  expected_values:
+    VSS: 11
+- response: 18DAF1EF03410D0C
+  expected_values:
+    VSS: 12
+- response: 18DAF1EF03410D0D
+  expected_values:
+    VSS: 13
+- response: 18DAF1EF03410D0F
+  expected_values:
+    VSS: 15
+- response: 18DAF1EF03410D11
+  expected_values:
+    VSS: 17
+- response: 18DAF1EF03410D13
+  expected_values:
+    VSS: 19
+- response: 18DAF1EF03410D15
+  expected_values:
+    VSS: 21
+- response: 18DAF1EF03410D16
+  expected_values:
+    VSS: 22
+- response: 18DAF1EF03410D1A
+  expected_values:
+    VSS: 26
+- response: 18DAF1EF03410D26
+  expected_values:
+    VSS: 38
+- response: 18DAF1EF03410D2A
+  expected_values:
+    VSS: 42
+- response: 18DAF1EF03410D2B
+  expected_values:
+    VSS: 43
+- response: 18DAF1EF03410D2D
+  expected_values:
+    VSS: 45
+- response: 18DAF1EF03410D30
+  expected_values:
+    VSS: 48
+- response: 18DAF1EF03410D3F
+  expected_values:
+    VSS: 63
+- response: 18DAF1EF03410D40
+  expected_values:
+    VSS: 64
+- response: 18DAF1EF03410D47
+  expected_values:
+    VSS: 71
