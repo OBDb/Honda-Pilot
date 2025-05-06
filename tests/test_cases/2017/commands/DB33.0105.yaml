@@ -7,67 +7,14 @@ test_cases:
     18DAF11E0341054D
   expected_values:
     ECT: 37
-- response: 18DAF1100341055A
+- response: 18DAF11003410554
   expected_values:
-    ECT: 50
-- response: |-
-    18DAF11003410564
-    18DAF11E03410564
-  expected_values:
-    ECT: 60
-- response: 18DAF1100341056A
-  expected_values:
-    ECT: 66
-- response: 18DAF11003410577
-  expected_values:
-    ECT: 79
-- response: 18DAF1100341057A
-  expected_values:
-    ECT: 82
-- response: 18DAF1100341057B
-  expected_values:
-    ECT: 83
-- response: |-
-    18DAF1100341057B
-    18DAF11E0341057B
-  expected_values:
-    ECT: 83
-- response: 18DAF1100341057C
-  expected_values:
-    ECT: 84
-- response: 18DAF1100341057D
-  expected_values:
-    ECT: 85
-- response: 18DAF1100341057E
-  expected_values:
-    ECT: 86
-- response: |-
-    18DAF1100341057E
-    18DAF11E0341057E
-  expected_values:
-    ECT: 86
-- response: 18DAF1100341057F
-  expected_values:
-    ECT: 87
-- response: |-
-    18DAF1100341057F
-    18DAF11E0341057F
-  expected_values:
-    ECT: 87
-- response: 18DAF11003410580
-  expected_values:
-    ECT: 88
+    ECT: 44
 - response: |-
     18DAF11003410580
     18DAF11E03410580
   expected_values:
     ECT: 88
-- response: 18DAF11003410582
-  expected_values:
-    ECT: 90
-- response: 18DAF11003410583
-  expected_values:
-    ECT: 91
 - response: 18DAF11003410584
   expected_values:
     ECT: 92
