@@ -1,23 +1,36 @@
 command_id: DB33.010D
-can_id_format: TWENTY_NINE_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: 18DAF10E03410D00
-  expected_values:
+- expected_values:
     VSS: 0
-- response: 18DAF11003410D00
-  expected_values:
+  response: 18DAF10E03410D00
+- expected_values:
+    VSS: 45
+  response: |-
+    18DAF10E03410D2D
+    18DAF1262600000000000000
+- expected_values:
+    VSS: 54
+  response: |-
+    18DAF10E03410D36
+    18DAF1262700000000000000
+- expected_values:
     VSS: 0
-- response: |-
+  response: |-
     18DAF11003410D00
     18DAF11E03410D00
-  expected_values:
-    VSS: 0
-- response: |-
-    18DAF11003410D7B
-    18DAF11E03410D7B
-  expected_values:
-    VSS: 123
-- response: 18DAF11003410D8E
-  expected_values:
-    VSS: 142
+- expected_values:
+    VSS: 128
+  response: |-
+    18DAF11003410D80
+    18DAF11E03410D80
+- expected_values:
+    VSS: 131
+  response: |-
+    18DAF11003410D83
+    18DAF11E03410D83
+- expected_values:
+    VSS: 148
+  response: 18DAF11003410D94
+- expected_values:
+    VSS: 13
+  response: 18DAF11E03410D0D

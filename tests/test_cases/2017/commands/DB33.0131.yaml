@@ -1,37 +1,46 @@
 command_id: DB33.0131
-can_id_format: TWENTY_NINE_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: 18DAF10E044131538C
-  expected_values:
+- expected_values:
     CLR_DIST: 21388
-- response: 18DAF10E04413153FF
-  expected_values:
+  response: 18DAF10E044131538C
+- expected_values:
     CLR_DIST: 21503
-- response: 18DAF10E0441315400
-  expected_values:
+  response: 18DAF10E04413153FF
+- expected_values:
     CLR_DIST: 21504
-- response: 18DAF10E0441315524
-  expected_values:
-    CLR_DIST: 21796
-- response: |-
+  response: 18DAF10E0441315400
+- expected_values:
+    CLR_DIST: 31312
+  response: |-
+    18DAF10E0441317A50
+    18DAF1262700000000000000
+- expected_values:
+    CLR_DIST: 32274
+  response: 18DAF10E0441317E12
+- expected_values:
+    CLR_DIST: 0
+  response: 18DAF1100441310000
+- expected_values:
+    CLR_DIST: 0
+  response: |-
     18DAF1100441310000
     18DAF11E0441310000
-  expected_values:
+- expected_values:
+    CLR_DIST: 1201
+  response: |-
+    18DAF11004413103FF
+    18DAF11E04413104B1
+- expected_values:
+    CLR_DIST: 1815
+  response: |-
+    18DAF1100441310719
+    18DAF11E0441310717
+    18DAF1262700000000000000
+- expected_values:
+    CLR_DIST: 3680
+  response: |-
+    18DAF1100441310E64
+    18DAF11E0441310E60
+- expected_values:
     CLR_DIST: 0
-- response: 18DAF1100441310002
-  expected_values:
-    CLR_DIST: 2
-- response: |-
-    18DAF11004413100BD
-    18DAF11E04413100BD
-  expected_values:
-    CLR_DIST: 189
-- response: |-
-    18DAF11004413102A3
-    18DAF11E04413102A3
-  expected_values:
-    CLR_DIST: 675
-- response: 18DAF11E0441310112
-  expected_values:
-    CLR_DIST: 274
+  response: 18DAF11E0441310000

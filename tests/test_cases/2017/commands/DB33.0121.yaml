@@ -1,0 +1,7 @@
+command_id: DB33.0121
+test_cases:
+- expected_values:
+    MIL_DIST: 0
+  response: |-
+    18DAF110044121061F
+    18DAF11E0441210000
