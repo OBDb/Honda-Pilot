@@ -1,7 +1,16 @@
 command_id: DB33.012F
-can_id_format: TWENTY_NINE_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: 18DAF11003412F35
-  expected_values:
-    FLI: 20.78431
+- expected_values:
+    FLI: 23.52941
+  response: 18DAF10E03412F3C
+- expected_values:
+    FLI: 4.31373
+  response: 18DAF11003412F0B
+- expected_values:
+    FLI: 29.80392
+  response: |-
+    18DAF11003412F4C
+    18DAF1262800000000555555
+- expected_values:
+    FLI: 94.11765
+  response: 18DAF11003412FF0
