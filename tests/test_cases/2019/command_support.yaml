@@ -60,4 +60,4 @@ unsupported_commands_by_ecu:
   "DA1E":
   - DA1E.1E.223083:HONDA_ATF
   "DA60":
-  - DA60.227028|fc=1:HONDA_AAT
+  - DA60.227028
