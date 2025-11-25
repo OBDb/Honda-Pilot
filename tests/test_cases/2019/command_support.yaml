@@ -58,6 +58,6 @@ unsupported_commands_by_ecu:
   "DA11":
   - DA11.11.222660:HONDA_RUNTM_V2
   "DA1E":
-  - DA1E.1E.223083:HONDA_ATF
+  - DA1E.1E.223083:HONDA_ATF_T_V2
   "DA60":
   - DA60.227028
