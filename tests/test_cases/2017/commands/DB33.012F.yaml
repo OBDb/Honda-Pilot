@@ -7,10 +7,10 @@ test_cases:
     FLI: 4.31373
   response: 18DAF11003412F0B
 - expected_values:
-    FLI: 9.80392
+    FLI: 9.01961
   response: |-
-    18DAF11003412F19
-    18DAF1262600000000000000
+    18DAF11003412F17
+    18DAF1262300000000000000
 - expected_values:
     FLI: 10.98039
   response: |-
@@ -49,11 +49,6 @@ test_cases:
   response: |-
     18DAF11003412FAB
     18DAF16023DB003200000000
-- expected_values:
-    FLI: 78.82353
-  response: |-
-    18DAF11003412FC9
-    18DAF1262300000000000000
 - expected_values:
     FLI: 86.27451
   response: |-
