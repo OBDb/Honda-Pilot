@@ -36,7 +36,7 @@ test_cases:
     EQ_RAT: 1.99
   response: |-
     18DAF110044144FFFF
-    18DAF1602500000000000000
+    18DAF160234E000000000000
 - expected_values:
     EQ_RAT: 0.97993
   response: |-
