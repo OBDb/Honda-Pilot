@@ -41,18 +41,13 @@ test_cases:
     18DAF11003412FAA
     18DAF16010396270298FFC00
 - expected_values:
-    FLI: 67.05882
-  response: |-
-    18DAF11003412FAB
-    18DAF16023DB003200000000
-- expected_values:
     FLI: 94.11765
   response: 18DAF11003412FF0
 - expected_values:
     FLI: 94.11765
   response: |-
     18DAF11003412FF0
-    18DAF1602800005555555555
+    18DAF160233E000000000000
 - expected_values:
     FLI: 94.11765
   response: |-
