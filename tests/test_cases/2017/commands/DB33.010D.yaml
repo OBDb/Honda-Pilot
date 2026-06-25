@@ -29,7 +29,7 @@ test_cases:
   response: |-
     18DAF11003410D00
     18DAF11E03410D00
-    18DAF1602400000000000000
+    18DAF16023A3003200000000
 - expected_values:
     VSS: 0
   response: |-
