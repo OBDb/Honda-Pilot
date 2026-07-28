@@ -95,7 +95,7 @@ test_cases:
   response: |-
     18DAF11003410580
     18DAF11E03410580
-    18DAF1602600000000000000
+    18DAF1602361000000000000
 - expected_values:
     ECT: 91
   response: |-
