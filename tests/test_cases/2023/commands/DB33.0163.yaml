@@ -1,0 +1,11 @@
+command_id: DB33.0163
+test_cases:
+- expected_values:
+    TQ_REF: 204
+  response: 18DAF11004416300CC
+- expected_values:
+    TQ_REF: 206
+  response: 18DAF11004416300CE
+- expected_values:
+    TQ_REF: 207
+  response: 18DAF11004416300CF
