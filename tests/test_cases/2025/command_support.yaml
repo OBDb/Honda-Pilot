@@ -67,6 +67,7 @@ supported_commands_by_ecu:
   - DB33.0104:LOAD_PCT
   - DB33.010D:VSS
   - DB33.0110:MAF
+  - DB33.0111:TP
   - DB33.011C:OBDSUP
   - DB33.0121:MIL_DIST
   - DB33.012F:FLI
@@ -75,6 +76,7 @@ supported_commands_by_ecu:
   - DB33.0134:LAMBDA11_CURRENT,O2S11_CURRENT
   - DB33.0142:VPWR
   - DB33.0144:EQ_RAT
+  - DB33.0147:TP_B
   - DB33.01A6:ODO
 unsupported_commands_by_ecu:
   "DA01":
