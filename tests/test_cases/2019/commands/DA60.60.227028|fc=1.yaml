@@ -1,6 +1,13 @@
 command_id: DA60.60.227028|fc=1
 test_cases:
 - expected_values:
+    HONDA_AAT: 39
+  response: "18 DA F1 60 10 39 62 70 28 F8 F0 00 \n18 DA F1 60 21 00 00 00 04 04 01
+    00 \n18 DA F1 60 22 00 00 00 00 00 4F 00 \n18 DA F1 60 23 4F 00 00 00 00 00 00
+    \n18 DA F1 60 24 00 00 00 00 00 00 00 \n18 DA F1 60 25 00 00 00 00 00 00 00 \n18
+    DA F1 60 26 00 00 00 00 00 00 00 \n18 DA F1 60 27 00 00 00 00 00 00 00 \n18 DA
+    F1 60 28 00 00 55 55 55 55 55 "
+- expected_values:
     HONDA_AAT: 34
   response: |-
     18DAF1601039627028F8F000
