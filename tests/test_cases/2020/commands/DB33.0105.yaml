@@ -21,3 +21,6 @@ test_cases:
 - expected_values:
     ECT: 76
   response: 18DAF11E03410574
+- expected_values:
+    ECT: 77
+  response: 18DAF11E03410575
