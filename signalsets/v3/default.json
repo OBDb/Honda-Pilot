@@ -110,7 +110,17 @@
   "signals": [
     {"id": "PILOT_BAT_DIST", "path": "Battery", "fmt": {"bix": 80, "len": 32, "max": 250000, "unit": "kilometers" }, "name": "Distance traveled since last charge"}
   ]},
-{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2612"}, "freq": 1, "dbgfilter": { "to": 2016, "from": 2018 },
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2610"}, "freq": 1, "dbgfilter": { "to": 2016, "from": 2018 },
+  "signals": [
+    {"id": "PILOT_GENERATOR_PCM", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Generator"},
+    {"id": "PILOT_AC_CLUTCH_PCM", "path": "Engine", "fmt": {"bix": 262, "len": 1, "max": 1,                           "unit": "offon"   }, "name": "A/C clutch"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2611"}, "freq": 5, "dbgfilter": { "to": 2016, "from": 2018 },
+  "signals": [
+    {"id": "PILOT_FUEL_AIR_RATIO_PCM", "path": "Fuel",   "fmt": {           "len": 8,  "max": 255,                             "unit": "scalar" }, "name": "Fuel/air commanded equivalence ratio"},
+    {"id": "PILOT_AIRGAS_RATIO_PCM",   "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 29.4, "mul": 29.4, "div": 65535, "unit": "scalar" }, "name": "Air/gas ratio"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2612"}, "freq": 1, "dbgfilter": { "to": 2016, "years": [2018], "from": 2020 },
   "signals": [
     {"id": "PILOT_CURRENT_GEAR_VAR_2", "path": "Transmission", "fmt": {"bix": 352, "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear var.2"},
     {"id": "PILOT_CURRENT_GEAR_VAR_3", "path": "Transmission", "fmt": {"bix": 368, "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear var.3"}
@@ -118,6 +128,47 @@
 { "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2613"}, "freq": 1, "dbgfilter": { "to": 2016, "years": [2018], "from": 2020 },
   "signals": [
     {"id": "PILOT_AC_P", "path": "Climate", "fmt": {"bix": 120, "len": 16, "max": 1000, "unit": "kilopascal" }, "name": "A/C pressure"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2615"}, "freq": 1,
+  "signals": [
+    {"id": "PILOT_ACTIVE_CYL_PCM", "path": "Engine", "fmt": {"bix": 400, "len": 8, "max": 6, "unit": "scalar" }, "name": "Active cylinders"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "fcm1": true, "cmd": {"22": "2660"}, "freq": 5, "dbgfilter": { "to": 2018, "from": 2020 },
+  "signals": [
+    {"id": "PILOT_ODO_PCM",   "path": "Trips",  "fmt": {"bix": 344, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer",                "suggestedMetric": "odometer"},
+    {"id": "PILOT_RUNTM_PCM", "path": "Clocks", "fmt": {"bix": 368, "len": 16, "max": 65535,    "unit": "seconds"    }, "name": "Time since engine start", "description": "How long it's been since the engine started."}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2661"}, "freq": 0.25,
+  "signals": [
+    {"id": "PILOT_FUELAIR_CAR_PCM", "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 29.4, "div": 2229.08163265, "unit": "scalar" }, "name": "Fuel/air commanded equivalence ratio"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2662"}, "freq": 0.25, "dbgfilter": { "to": 2016, "from": 2018 },
+  "signals": [
+    {"id": "PILOT_KNOCK_CONTROL_PCM", "path": "Engine", "fmt": {"bix": 80,  "len": 8, "max": 2,   "mul": 2,   "div": 255, "unit": "unknown" }, "name": "Knock control",                "description": "ECU's determination of fuel quality."},
+    {"id": "PILOT_VTC_DUTY_PCM",      "path": "Engine", "fmt": {"bix": 224, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Variable timing control duty", "description": "How long the valve is energized versus how long it's not energized, expressed as a percentage. The higher the duty percentage, the more the cam timing is advanced toward its maximum potential."}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2663"}, "freq": 1,
+  "signals": [
+    {"id": "PILOT_MIS_1_PCM",     "path": "Engine", "fmt": {"bix": 272, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #1"},
+    {"id": "PILOT_MIS_2_PCM",     "path": "Engine", "fmt": {"bix": 288, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #2"},
+    {"id": "PILOT_MIS_3_PCM",     "path": "Engine", "fmt": {"bix": 304, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #3"},
+    {"id": "PILOT_MIS_4_PCM",     "path": "Engine", "fmt": {"bix": 320, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #4"},
+    {"id": "PILOT_MISFIRE_5_PCM", "path": "ECU",    "fmt": {"bix": 336, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 5"},
+    {"id": "PILOT_MISFIRE_6_PCM", "path": "ECU",    "fmt": {"bix": 352, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 6"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2666"}, "freq": 1,
+  "signals": [
+    {"id": "PILOT_EOT_VAR_3_PCM", "path": "Engine", "fmt": {"bix": 88,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variant 3"},
+    {"id": "PILOT_EOT_VAR_4_PCM", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variant 4"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "266C"}, "freq": 1,
+  "signals": [
+    {"id": "PILOT_MISFIRE_COUNT_1_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #1, variant 1"},
+    {"id": "PILOT_MISFIRE_COUNT_2_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 56, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #2, variant 1"},
+    {"id": "PILOT_MISFIRE_COUNT_3_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 64, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #3, variant 1"},
+    {"id": "PILOT_MISFIRE_COUNT_4_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #4, variant 1"},
+    {"id": "PILOT_MISFIRE_COUNT_5_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 80, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #5, variant 1"},
+    {"id": "PILOT_MISFIRE_COUNT_6_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 88, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #6, variant 1"}
   ]},
 { "hdr": "DA10", "rax": "10", "cmd": {"22": "2610"}, "freq": 1, "dbgfilter": { "to": 2016, "years": [2018, 2019, 2021, 2022], "from": 2026 },
   "signals": [
