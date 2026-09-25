@@ -34,9 +34,8 @@
   ]},
 { "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2662"}, "freq": 0.25, "dbgfilter": { "to": 2016, "years": [2018], "from": 2020 },
   "signals": [
-    {"id": "PILOT_KNOCK_CONTROL_PCM", "path": "ECU",    "fmt": {"bix": 80,  "len": 8,  "max": 2,                "mul": 2,   "div": 255,             "unit": "scalar"  }, "name": "Knock control"},
-    {"id": "PILOT_CAT_T_PCM",         "path": "Engine", "fmt": {"bix": 96,  "len": 16, "max": 1500, "min": -40,             "div": 10,  "add": -40, "unit": "celsius" }, "name": "Catalyst temperature"},
-    {"id": "PILOT_VTC_DUTY_PCM",      "path": "Engine", "fmt": {"bix": 224, "len": 8,  "max": 100,              "mul": 100, "div": 255,             "unit": "percent" }, "name": "Variable valve timing duty"}
+    {"id": "PILOT_KNOCK_CONTROL_PCM", "path": "ECU",    "fmt": {"bix": 80,  "len": 8, "max": 2,   "mul": 2,   "div": 255, "unit": "scalar"  }, "name": "Knock control"},
+    {"id": "PILOT_VTC_DUTY_PCM",      "path": "Engine", "fmt": {"bix": 224, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Variable valve timing duty"}
   ]},
 { "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2663"}, "freq": 1, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
