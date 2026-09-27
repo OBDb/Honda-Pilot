@@ -1,4 +1,12 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "DA0E", "type": "engine" },
+    { "hdr": "DA10", "type": "engine" },
+    { "hdr": "DA11", "type": "engine" },
+    { "hdr": "DA1D", "type": "transmission" },
+    { "hdr": "DA1E", "type": "transmission" },
+    { "hdr": "DA26", "type": "tpms" }
+  ],
+  "commands": [
 { "hdr": "DA0E", "rax": "0E", "cmd": {"22": "2610"}, "freq": 1, "dbgfilter": { "to": 2016, "years": [2018], "from": 2020 },
   "signals": [
     {"id": "PILOT_GENERATOR_PCM", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Generator"},
