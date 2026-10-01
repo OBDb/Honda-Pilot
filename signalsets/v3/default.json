@@ -243,10 +243,10 @@
   ]},
 { "hdr": "DA2A", "rax": "2A", "dbg": true, "cmd": {"22": "4201"}, "freq": 1,
   "signals": [
-    {"id": "PILOT_BRK_PED_STK",  "path": "Electrical", "fmt": {"bix": 88,  "len": 16, "max": 50,     "div": 10,  "unit": "millimeters" }, "name": "Brake pedal stroke"},
-    {"id": "PILOT_BRK_FLD_P",    "path": "Electrical", "fmt": {"bix": 168, "len": 16, "max": 5,      "div": 100, "unit": "unknown"     }, "name": "Brake fluid pressure"},
-    {"id": "PILOT_MSTR_CYL_STK", "path": "Electrical", "fmt": {"bix": 232, "len": 16, "max": 6553.5, "div": 10,  "unit": "millimeters" }, "name": "Master cylinder stroke"},
-    {"id": "PILOT_SLV_CYL_STK",  "path": "Electrical", "fmt": {"bix": 248, "len": 16, "max": 6553.5, "div": 10,  "unit": "millimeters" }, "name": "Slave cylinder stroke"}
+    {"id": "PILOT_BRK_PED_STK",  "path": "Electrical", "fmt": {"bix": 88,  "len": 16, "max": 50,                     "div": 10,                "unit": "millimeters" }, "name": "Brake pedal stroke"},
+    {"id": "PILOT_BRK_FLD_P",    "path": "Electrical", "fmt": {"bix": 168, "len": 16, "max": 5,                      "div": 100,               "unit": "unknown"     }, "name": "Brake fluid pressure"},
+    {"id": "PILOT_MSTR_CYL_STK", "path": "Electrical", "fmt": {"bix": 232, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,  "sign": true, "unit": "millimeters" }, "name": "Master cylinder stroke"},
+    {"id": "PILOT_SLV_CYL_STK",  "path": "Electrical", "fmt": {"bix": 248, "len": 16, "max": 6553.5,                 "div": 10,                "unit": "millimeters" }, "name": "Slave cylinder stroke"}
   ]},
 { "hdr": "DA60", "rax": "60", "cmd": {"22": "7022"}, "freq": 30, "dbgfilter": { "to": 2016, "years": [2018, 2021, 2022], "from": 2026 },
   "signals": [
