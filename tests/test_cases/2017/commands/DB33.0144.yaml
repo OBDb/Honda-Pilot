@@ -1,13 +1,13 @@
 command_id: DB33.0144
 test_cases:
 - expected_values:
-    EQ_RAT: 1.00002
+    EQ_RAT: 1
   response: '18 DA F1 10 04 41 44 80 00 '
 - expected_values:
-    EQ_RAT: 0.92192
+    EQ_RAT: 0.92191
   response: 18DAF10E0441447601
 - expected_values:
-    EQ_RAT: 1.00002
+    EQ_RAT: 1
   response: 18DAF10E0441448000
 - expected_values:
     EQ_RAT: 1.99
@@ -16,17 +16,17 @@ test_cases:
     EQ_RAT: 0.81434
   response: 18DAF110044144683C
 - expected_values:
-    EQ_RAT: 0.82808
+    EQ_RAT: 0.82806
   response: |-
     18DAF11004414469FE
     18DAF1602500000000000000
 - expected_values:
-    EQ_RAT: 0.82945
+    EQ_RAT: 0.82944
   response: |-
     18DAF1100441446A2B
     18DAF1602800005555555555
 - expected_values:
-    EQ_RAT: 0.97633
+    EQ_RAT: 0.97632
   response: |-
     18DAF1100441447CF8
     18DAF1602700000000000000
@@ -41,22 +41,22 @@ test_cases:
     18DAF1602700000000000000
     18DAF1602800005555555555
 - expected_values:
-    EQ_RAT: 0.99602
+    EQ_RAT: 0.996
   response: |-
     18DAF1100441447F7D
     18DAF11E2500000000005555
 - expected_values:
-    EQ_RAT: 0.99867
+    EQ_RAT: 0.99866
   response: |-
     18DAF1100441447FD4
     18DAF1262300000000000000
 - expected_values:
-    EQ_RAT: 1.0078
+    EQ_RAT: 1.00778
   response: |-
     18DAF11004414480FF
     18DAF1602355000000000000
 - expected_values:
-    EQ_RAT: 1.02211
+    EQ_RAT: 1.02209
   response: |-
     18DAF11004414482D4
     18DAF160234F000000000000
@@ -94,12 +94,12 @@ test_cases:
     18DAF1602700000000000000
     18DAF1602800005555555555
 - expected_values:
-    EQ_RAT: 0.97993
+    EQ_RAT: 0.97992
   response: |-
     18DAF11E230081F040001C00
     18DAF1100441447D6E
 - expected_values:
-    EQ_RAT: 0.99834
+    EQ_RAT: 0.99832
   response: |-
     18DAF11E2500000000005555
     18DAF1100441447FC9
