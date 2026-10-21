@@ -896,23 +896,23 @@
     {"id": "PILOT_TT_RR", "path": "Tires", "fmt": {"bix": 208, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Rear right tire temperature",  "suggestedMetric": "rearRightTireTemperature"},
     {"id": "PILOT_TT_RL", "path": "Tires", "fmt": {"bix": 216, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Rear left tire temperature",   "suggestedMetric": "rearLeftTireTemperature"}
   ]},
-{ "hdr": "DA26", "rax": "26", "dbg": true, "cmd": {"22": "6010"}, "freq": 60,
+{ "hdr": "DA26", "rax": "26", "cmd": {"22": "6010"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_26_6010", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 26 22 6010", "description": "Captured to learn this reply's layout. Its listed contents: Low Air Pressure Warning Threshold Reprogramming."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4000"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4000"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4000", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4000", "description": "Captured to learn this reply's layout. Its listed contents: Variant capability block (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4001"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4001"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4001", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4001", "description": "Captured to learn this reply's layout. Its listed contents: Diagnostic state/support block (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4002"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4002"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4002", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4002", "description": "Captured to learn this reply's layout. Its listed contents: Scaled parameter readback (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4003"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4003"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4003", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4003", "description": "Captured to learn this reply's layout. Its listed contents: Diagnostic parameter/flag block (unconfirmed)."}
   ]},
@@ -924,11 +924,11 @@
   "signals": [
     {"id": "PILOT_BRK_P", "path": "Electrical", "fmt": {"bix": 56, "len": 16, "max": 120, "add": -25, "unit": "bars" }, "name": "Brake pressure"}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4006"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4006"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4006", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4006", "description": "Captured to learn this reply's layout. Its listed contents: Diagnostic support/status block (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4007"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4007"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4007", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4007", "description": "Captured to learn this reply's layout. Its listed contents: Clutch Stroke Sensor Value; CRUISE CANCEL CLUTCH SWITCH STATUS; NEUTRAL SWITCH STATUS; BACK-UP LIGHT SWITCH (Input from CAN) (unconfirmed)."}
   ]},
@@ -936,27 +936,27 @@
   "signals": [
     {"id": "PILOT_RAW_28_4008", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4008", "description": "Captured to learn this reply's layout. Its listed contents: TPMS_INCH; INITIALIZED ODOMETER; TPMS_SPRTINCH (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4030"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4030"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4030", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4030", "description": "Captured to learn this reply's layout. Its listed contents: Stored record 0: state view (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4031"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4031"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4031", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4031", "description": "Captured to learn this reply's layout. Its listed contents: Stored record 0: data view (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4032"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4032"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4032", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4032", "description": "Captured to learn this reply's layout. Its listed contents: Stored record 0: status view (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4033"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4033"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4033", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4033", "description": "Captured to learn this reply's layout. Its listed contents: Stored record 1: state view (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4034"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4034"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4034", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4034", "description": "Captured to learn this reply's layout. Its listed contents: Stored record 1: data view (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4035"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4035"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4035", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4035", "description": "Captured to learn this reply's layout. Its listed contents: Stored record 1: status view (unconfirmed)."}
   ]},
@@ -976,43 +976,43 @@
   "signals": [
     {"id": "PILOT_RAW_28_4039", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4039", "description": "Captured to learn this reply's layout. Its listed contents: FL wheel speed at warning F2; RL wheel speed at warning F2; Milage of Initialization F2; System Malfunction warning milage F2; Outside temperature at warning F2; FR wheel speed at warning F2; RR wheel speed at warning F2 (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4070"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4070"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4070", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4070", "description": "Captured to learn this reply's layout. Its listed contents: Stored record 0: primary view (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4071"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4071"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4071", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4071", "description": "Captured to learn this reply's layout. Its listed contents: Stored record 0: secondary view (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4072"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4072"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4072", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4072", "description": "Captured to learn this reply's layout. Its listed contents: Stored record 1: primary view (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4073"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "4073"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_4073", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 4073", "description": "Captured to learn this reply's layout. Its listed contents: Stored record 1: secondary view (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "E600"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "E600"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_E600", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 E600", "description": "Captured to learn this reply's layout. Its listed contents: Scaled runtime scalar (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "E602"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "E602"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_E602", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 E602", "description": "Captured to learn this reply's layout. Its listed contents: Constant zero record (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "F100"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "F100"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_F100", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 F100", "description": "Captured to learn this reply's layout. Its listed contents: Four-byte runtime identifier (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "F110"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "F110"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_F110", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 F110", "description": "Captured to learn this reply's layout. Its listed contents: Conditional runtime identity block (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "F112"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "F112"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_F112", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 F112", "description": "Captured to learn this reply's layout. Its listed contents: Conditional formatted identity block (unconfirmed)."}
   ]},
-{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "F181"}, "freq": 60,
+{ "hdr": "DA28", "rax": "28", "cmd": {"22": "F181"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_28_F181", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 28 22 F181", "description": "Captured to learn this reply's layout. Its listed contents: Program ID (unconfirmed)."}
   ]},
@@ -1083,11 +1083,11 @@
   "signals": [
     {"id": "PILOT_RAW_53_0006", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 53 22 0006", "description": "Captured to learn this reply's layout. Its listed contents: OPDS Initialization."}
   ]},
-{ "hdr": "DA53", "rax": "53", "dbg": true, "cmd": {"22": "8000"}, "freq": 60,
+{ "hdr": "DA53", "rax": "53", "cmd": {"22": "8000"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_53_8000", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 53 22 8000", "description": "Captured to learn this reply's layout. Its listed contents: ECU Maker; Number of Front Passenger's Seat Weight Sensor."}
   ]},
-{ "hdr": "DA53", "rax": "53", "dbg": true, "cmd": {"22": "8001"}, "freq": 60,
+{ "hdr": "DA53", "rax": "53", "cmd": {"22": "8001"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_53_8001", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 53 22 8001", "description": "Captured to learn this reply's layout. Its listed contents: Front Passenger's Airbag ON/OFF Switch Status; Left Front Seat Belt Buckle; Right Front Seat Belt Buckle; Passenger's Sitting Switch; Driver Seat Position Sensor; Passenger's Side Airbag OFF Indicator."}
   ]},
@@ -1095,27 +1095,27 @@
   "signals": [
     {"id": "PILOT_RAW_53_8003", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 53 22 8003", "description": "Captured to learn this reply's layout. Its listed contents: Failure Control Unit Check."}
   ]},
-{ "hdr": "DA53", "rax": "53", "dbg": true, "cmd": {"22": "8005"}, "freq": 60,
+{ "hdr": "DA53", "rax": "53", "cmd": {"22": "8005"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_53_8005", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 53 22 8005", "description": "Captured to learn this reply's layout. Its listed contents: Front Passenger's Weight."}
   ]},
-{ "hdr": "DA53", "rax": "53", "dbg": true, "cmd": {"22": "8010"}, "freq": 60,
+{ "hdr": "DA53", "rax": "53", "cmd": {"22": "8010"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_53_8010", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 53 22 8010", "description": "Captured to learn this reply's layout. Its listed contents: Left Front Airbag, Left Front/Rear Seat Belt Tensioner and/or Left Knee Airbag Deployed; Left Knee Airbag Deployed; Right Front Airbag, Right Front/Rear Seat Belt Tensioner and/or Right Knee Airbag Deployed; Right Knee Airbag Deployed; Both or Only Side Curtain Airbag and Seat Belt Tensioner Deployed; ...."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "7010"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7010"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_7010", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 7010", "description": "Captured to learn this reply's layout. Its listed contents: CVTF exchange indication implemented; Distance display unit; SmartMaintenance EU information output enable; Transmission type; Initial distance display unit; SmartMaintenance US information output enable."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "7012"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7012"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_7012", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 7012", "description": "Captured to learn this reply's layout. Its listed contents: Parking Sensor equipment information."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "7020"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7020"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_7020", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 7020", "description": "Captured to learn this reply's layout. Its listed contents: ABS Indicator; ACC(Amber) Indicator; ACC(Green) Indicator; Active Damper system trouble warn on MID; Adaptive Front-lighting system Indicator; TPMS/DWS Warning Indicator; Passenger's Airbag OFF indicator; AUTO STOP trouble Indicator; AUTO STOP operation Indicator; IMA auto-stop indicator; AT Temp trouble warn on MID; BATT Indicator; BRAKE Press Indicator; Brake(Amber) Indicator; ...."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "7021"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7021"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_7021", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 7021", "description": "Captured to learn this reply's layout. Its listed contents: BRAKE HOLD active indicator; BRAKE HOLD standby indicator; Charging cable connect indicator; Drive READY status indicator; Driving battery failure indicator; E-Call System Failure Indicator; EV Driving Status Indicator; EV Mode Indicator; H2 Leak Warning Indicator; HV Charge Mode Indicator; HV Keep/Charge Mode Common Indicator; LPG Mode Indicator; Motor/Control unit hot indicator; ...."}
   ]},
@@ -1135,11 +1135,11 @@
   "signals": [
     {"id": "PILOT_FLV", "path": "Fuel", "fmt": {"bix": 96, "len": 16, "max": 655, "div": 100, "unit": "liters" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "702A"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "702A"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_702A", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 702A", "description": "Captured to learn this reply's layout. Its listed contents: Real fuel consumption to this fuel supply from the last fuel supply; Residual quantity of the fuel validated in the distance calculation which can be flown; RANGE upper indicated value; Fuel economy figures used for the distance calculation which can be flown; The actual fuel economy."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "702B"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "702B"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_702B", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 702B", "description": "Captured to learn this reply's layout. Its listed contents: Instantaneous Fuel Consumption Control Mode; Instantaneous Fuel Consumption Display unit; Instantaneous Fuel Consumption Value."}
   ]},
@@ -1159,7 +1159,7 @@
   "signals": [
     {"id": "PILOT_RAW_60_7061", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 7061", "description": "Captured to learn this reply's layout. Its listed contents: Real remaining distance 0; Real remaining distance 1; Real remaining distance 2; Real remaining distance 3; Real remaining distance 4; Real remaining distance 5; Real remaining distance 6; Real remaining distance 7; Real remaining distance 8; Real remaining distance 9; Real remaining distance A; Real remaining distance B."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "7068"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7068"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_7068", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 7068", "description": "Captured to learn this reply's layout. Its listed contents: item 1 function enable; Real remaining days 1; Real remaining distance 1; item 2 function enable; Real remaining days 2; Real remaining distance 2; item 3 function enable; Sub maintenance item 3 judge method; Real remaining days 3; Real remaining distance 3; item 4 function enable; Real remaining days 4; Real remaining distance 4; item 5 function enable; Real remaining days 5; ...."}
   ]},
@@ -1179,39 +1179,39 @@
   "signals": [
     {"id": "PILOT_RAW_60_70A4", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 70A4", "description": "Captured to learn this reply's layout. Its listed contents: MAINTE REQ'D Distance when reset; Oil maintenance for kei turbo car distance when reset."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "70A8"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "70A8"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_70A8", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 70A8", "description": "Captured to learn this reply's layout. Its listed contents: ATF exchange times; Oil exchange times; Main maintenance status; Sub maintenance 1 distance when reset; Sub maintenance 2 distance when reset; Sub maintenance 3 distance when reset; Sub maintenance item 3 reset status flag; Sub maintenance 4 distance when reset; Sub maintenance 5 distance when reset; Sub maintenance 6 distance when reset; Sub maintenance 7 distance when reset; ...."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "70A9"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "70A9"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_70A9", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 70A9", "description": "Captured to learn this reply's layout. Its listed contents: Item A time when reset; past time; Remaining days readout status; reference timing(day); reference timing(month); reference timing(year); Item 1 exchange times; Item 2 exchange times; Item 3 exchange times; Item 4 exchange times; Item 5 exchange times; Item 6 exchange times; Item 7 exchange times; Item 8 exchange times; Item 9 exchange times."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "70C0"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "70C0"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_70C0", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 70C0", "description": "Captured to learn this reply's layout. Its listed contents: LIM button; CMBS OFF switch; cancel button; cruise control main button; res/accel button; decel/set button; DISTANCE switch; TPMS Initialization Switch; ECON switch; FCW OFF switch; Front Defroster switch; Auto Idle Stop System OFF Switch; INFORMATION switch; LKAS switch; NEXT switch; NORMAL switch; PREVIOUS switch; Seat Belt Switch; SEL/RESET switch on instrument panel; ...."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "70C1"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "70C1"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_70C1", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 70C1", "description": "Captured to learn this reply's layout. Its listed contents: ADS  Switch; BRAKE HOLD switch; CTBA OFF Switch; EV Mode switch; FHEV Mode switch; HFL HANG-UP/BACK button; HILL CONTROL switch; IDS Switch Rotation to Left; IDS Switch Rotation to Right; ILLUMI VOL+ switch; ILLUMI VOL- switch; ILLUMI Cancel Switch; LDW OFF switch; Mode DOWN Switch; Mode Switch; Mode UP Switch; Parking Brake switch; HFL PICK-UP button; RTC OFF switch; SNOW Switch; ...."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "70C2"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "70C2"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_70C2", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 70C2", "description": "Captured to learn this reply's layout. Its listed contents: Steering Commander Application Switch; Left side Audio Remote Switch (VOL. DOWN); Left side Audio Remote Switch Left CH(-); Right side Audio Remote Switch Right CH(+); Left side Audio Remote Switch Right CH(+); Left side Audio Remote Switch (VOL. UP); Steering Commander Mute Switch; Right side Audio Remote Switch (VOL. DOWN); Right side Audio Remote Switch Left CH(-); ...."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "70C3"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "70C3"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_70C3", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 70C3", "description": "Captured to learn this reply's layout. Its listed contents: Steering Pad 4 Way Left Switch; Steering Pad 4 Way Lower Switch; Steering Pad 4 Way Right Switch; Steering Pad 4 Way Switch (Touch); Steering Pad 4 Way Upper Switch; Steering Pad Disp Switch; Steering Pad 4 Way Enter Switch; Steering Pad HUD Switch (Lower); Steering Pad HUD Switch (Upper); Steering Pad Turn to Left; Steering Pad Turn to Right; Steering Pad Switch (Slide from Left to Right); ...."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "F110"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "F110"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_F110", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 F110", "description": "Captured to learn this reply's layout. Its listed contents: Part number."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "F112"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "F112"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_F112", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 F112", "description": "Captured to learn this reply's layout. Its listed contents: Serial number day; Serial number; Serial number year code."}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "F181"}, "freq": 60,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "F181"}, "freq": 60, "dbgfilter": { "to": 2018, "from": 2020 },
   "signals": [
     {"id": "PILOT_RAW_60_F181", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 F181", "description": "Captured to learn this reply's layout. Its listed contents: Read application software / program ID."}
   ]}
