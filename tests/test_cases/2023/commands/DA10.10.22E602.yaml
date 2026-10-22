@@ -1,0 +1,11 @@
+command_id: DA10.10.22E602
+test_cases:
+- expected_values:
+    PILOT_RAW_10_E602: 24
+  response: 18DAF1100662E602185400
+- expected_values:
+    PILOT_RAW_10_E602: 24
+  response: 18DAF1100662E60218DB00
+- expected_values:
+    PILOT_RAW_10_E602: 25
+  response: 18DAF1100662E60219FB00
