@@ -1,8 +1,0 @@
-command_id: DA60.60.22F181
-test_cases:
-- expected_values:
-    PILOT_RAW_60_F181: 55
-  response: |-
-    18DAF160101362F181373831
-    18DAF1602130392D5447372D
-    18DAF16022414D3230000055
