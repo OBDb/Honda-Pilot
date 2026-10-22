@@ -1,0 +1,7 @@
+command_id: DA10.10.222600
+test_cases:
+- expected_values:
+    PILOT_RAW_10_2600: 51
+  response: |-
+    18DAF110100D622600332328
+    18DAF110210101EE0E800000
