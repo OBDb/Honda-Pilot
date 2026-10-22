@@ -6,3 +6,6 @@ test_cases:
 - expected_values:
     PILOT_RAW_28_E600: 56
   response: 18DAF1280562E600380C
+- expected_values:
+    PILOT_RAW_28_E600: 56
+  response: 18DAF1280562E6003821
