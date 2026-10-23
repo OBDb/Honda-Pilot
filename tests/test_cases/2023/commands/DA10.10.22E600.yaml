@@ -9,3 +9,24 @@ test_cases:
 - expected_values:
     PILOT_RAW_10_E600: 56
   response: 18DAF1100562E6003800
+- expected_values:
+    PILOT_RAW_10_E600: 56
+  response: 18DAF1100562E600380A
+- expected_values:
+    PILOT_RAW_10_E600: 56
+  response: 18DAF1100562E600383B
+- expected_values:
+    PILOT_RAW_10_E600: 56
+  response: 18DAF1100562E6003862
+- expected_values:
+    PILOT_RAW_10_E600: 56
+  response: 18DAF1100562E6003875
+- expected_values:
+    PILOT_RAW_10_E600: 56
+  response: 18DAF1100562E600387F
+- expected_values:
+    PILOT_RAW_10_E600: 56
+  response: 18DAF1100562E6003892
+- expected_values:
+    PILOT_RAW_10_E600: 56
+  response: 18DAF1100562E60038A6
