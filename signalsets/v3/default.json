@@ -441,7 +441,9 @@
   ]},
 { "hdr": "DA10", "rax": "10", "cmd": {"22": "268E"}, "freq": 30, "dbgfilter": { "to": 2022, "from": 2024 },
   "signals": [
-    {"id": "PILOT_RAW_10_268E", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 10 22 268E", "description": "Captured to learn this reply's layout. Its listed contents: Fuel Pressure Converted From PF Sensor; Fuel Pressure Direct Injection System; Relief Valve; Downstream Voltage of the Injector Relay; Boost Voltage for Direct Injection."}
+    {"id": "PILOT_RAW_10_268E",      "path": "ECU",    "fmt": {           "len": 8,  "max": 255,              "unit": "scalar"     }, "name": "Raw first byte of 10 22 268E",           "description": "Captured to learn this reply's layout. Its listed contents: Fuel Pressure Converted From PF Sensor; Fuel Pressure Direct Injection System; Relief Valve; Downstream Voltage of the Injector Relay; Boost Voltage for Direct Injection."},
+    {"id": "PILOT_FUEL_PRESSURE_PF", "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 40000, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure converted from PF sensor", "description": "Placed by position and range, not confirmed against a standard PID. First of the listed contents; reads 500-1130 counts on the 2023, 5.0-11.3 MPa at 10 kPa a count, the size of the fuel rail pressure Service 01 reads there (5040-5350 kPa, untimed)."},
+    {"id": "PILOT_FUEL_PRESSURE_DI", "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 40000, "mul": 10, "unit": "kilopascal" }, "name": "Direct injection fuel pressure",         "description": "Placed by position and range, not confirmed against a standard PID. Second of the listed contents; within 20 counts of the PF reading in all six 2023 replies, so a second measure of the same rail."}
   ]},
 { "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "268F"}, "freq": 30,
   "signals": [
@@ -1049,7 +1051,8 @@
   ]},
 { "hdr": "DA60", "rax": "60", "cmd": {"22": "702A"}, "freq": 30, "dbgfilter": { "to": 2018, "years": [2020, 2021, 2022], "from": 2024 },
   "signals": [
-    {"id": "PILOT_RAW_60_702A", "path": "ECU", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Raw first byte of 60 22 702A", "description": "Captured to learn this reply's layout. Its listed contents: Real fuel consumption to this fuel supply from the last fuel supply; Residual quantity of the fuel validated in the distance calculation which can be flown; RANGE upper indicated value; Fuel economy figures used for the distance calculation which can be flown; The actual fuel economy."}
+    {"id": "PILOT_RAW_60_702A", "path": "ECU",  "fmt": {           "len": 8,  "max": 255,  "unit": "scalar"     }, "name": "Raw first byte of 60 22 702A", "description": "Captured to learn this reply's layout. Its listed contents: Real fuel consumption to this fuel supply from the last fuel supply; Residual quantity of the fuel validated in the distance calculation which can be flown; RANGE upper indicated value; Fuel economy figures used for the distance calculation which can be flown; The actual fuel economy."},
+    {"id": "PILOT_RANGE",       "path": "Fuel", "fmt": {"bix": 96, "len": 16, "max": 2000, "unit": "kilometers" }, "name": "Estimated range",              "description": "Placed by position and range, not confirmed against a standard PID. Tracks the fuel level read at DA60 22 7029 in proportion in timed 2019 replies (472, 470 and 469 km beside 50.6 to 50.3 L; 463 and 460 km beside 49.6 and 49.3 L), and reads 610-625 km on the 2023. Kilometers by magnitude."}
   ]},
 { "hdr": "DA60", "rax": "60", "cmd": {"22": "702B"}, "freq": 30, "dbgfilter": { "to": 2018, "years": [2020, 2021, 2022], "from": 2024 },
   "signals": [
