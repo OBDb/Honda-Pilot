@@ -1,0 +1,7 @@
+command_id: DA26.26.226010
+test_cases:
+- expected_values:
+    PILOT_RAW_26_6010: 0
+  response: |-
+    18DAF126100B62601000DC00
+    18DAF12621BE00DC00BE5555
