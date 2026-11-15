@@ -240,6 +240,7 @@ supported_commands_by_ecu:
   - DB33.0104:LOAD_PCT
   - DB33.0105:ECT
   - DB33.0106:SHRTFT1
+  - DB33.010C:RPM
   - DB33.010D:VSS
   - DB33.0111:TP
   - DB33.011C:OBDSUP
@@ -248,6 +249,7 @@ supported_commands_by_ecu:
   - DB33.012F:FLI
   - DB33.0130:WARM_UPS
   - DB33.0131:CLR_DIST
+  - DB33.0143:LOAD_ABS
   - DB33.0144:EQ_RAT
   - DB33.0166:MAFA,MAFA_SUP,MAFB,MAFB_SUP
 unsupported_commands_by_ecu:
