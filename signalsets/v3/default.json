@@ -865,14 +865,14 @@
   ]},
 { "hdr": "DA26", "rax": "26", "cmd": {"22": "6001"}, "freq": 15, "dbgfilter": { "to": 2016, "years": [2018, 2021, 2022], "from": 2026 },
   "signals": [
-    {"id": "PILOT_TP_FR", "path": "Tires", "fmt": {"bix": 64,  "len": 16, "max": 65535,                            "unit": "kilopascal" }, "name": "Front right tire pressure",    "suggestedMetric": "frontRightTirePressure"},
-    {"id": "PILOT_TP_FL", "path": "Tires", "fmt": {"bix": 80,  "len": 16, "max": 65535,                            "unit": "kilopascal" }, "name": "Front left tire pressure",     "suggestedMetric": "frontLeftTirePressure"},
-    {"id": "PILOT_TP_RR", "path": "Tires", "fmt": {"bix": 96,  "len": 16, "max": 65535,                            "unit": "kilopascal" }, "name": "Rear right tire pressure",     "suggestedMetric": "rearRightTirePressure"},
-    {"id": "PILOT_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 16, "max": 65535,                            "unit": "kilopascal" }, "name": "Rear left tire pressure",      "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "PILOT_TT_FR", "path": "Tires", "fmt": {"bix": 192, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Front right tire temperature", "suggestedMetric": "frontRightTireTemperature"},
-    {"id": "PILOT_TT_FL", "path": "Tires", "fmt": {"bix": 200, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Front left tire temperature",  "suggestedMetric": "frontLeftTireTemperature"},
-    {"id": "PILOT_TT_RR", "path": "Tires", "fmt": {"bix": 208, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Rear right tire temperature",  "suggestedMetric": "rearRightTireTemperature"},
-    {"id": "PILOT_TT_RL", "path": "Tires", "fmt": {"bix": 216, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Rear left tire temperature",   "suggestedMetric": "rearLeftTireTemperature"}
+    {"id": "PILOT_TP_FR", "path": "Tires", "fmt": {"bix": 64,  "len": 16, "max": 65535,                            "nullmax": 998, "unit": "kilopascal" }, "name": "Front right tire pressure",    "suggestedMetric": "frontRightTirePressure"},
+    {"id": "PILOT_TP_FL", "path": "Tires", "fmt": {"bix": 80,  "len": 16, "max": 65535,                            "nullmax": 998, "unit": "kilopascal" }, "name": "Front left tire pressure",     "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "PILOT_TP_RR", "path": "Tires", "fmt": {"bix": 96,  "len": 16, "max": 65535,                            "nullmax": 998, "unit": "kilopascal" }, "name": "Rear right tire pressure",     "suggestedMetric": "rearRightTirePressure"},
+    {"id": "PILOT_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 16, "max": 65535,                            "nullmax": 998, "unit": "kilopascal" }, "name": "Rear left tire pressure",      "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "PILOT_TT_FR", "path": "Tires", "fmt": {"bix": 192, "len": 8,  "max": 127,   "min": -128, "sign": true,                 "unit": "celsius"    }, "name": "Front right tire temperature", "suggestedMetric": "frontRightTireTemperature"},
+    {"id": "PILOT_TT_FL", "path": "Tires", "fmt": {"bix": 200, "len": 8,  "max": 127,   "min": -128, "sign": true,                 "unit": "celsius"    }, "name": "Front left tire temperature",  "suggestedMetric": "frontLeftTireTemperature"},
+    {"id": "PILOT_TT_RR", "path": "Tires", "fmt": {"bix": 208, "len": 8,  "max": 127,   "min": -128, "sign": true,                 "unit": "celsius"    }, "name": "Rear right tire temperature",  "suggestedMetric": "rearRightTireTemperature"},
+    {"id": "PILOT_TT_RL", "path": "Tires", "fmt": {"bix": 216, "len": 8,  "max": 127,   "min": -128, "sign": true,                 "unit": "celsius"    }, "name": "Rear left tire temperature",   "suggestedMetric": "rearLeftTireTemperature"}
   ]},
 { "hdr": "DA26", "rax": "26", "cmd": {"22": "6010"}, "freq": 60, "dbgfilter": { "to": 2018, "years": [2021, 2022], "from": 2024 },
   "signals": [
@@ -1035,7 +1035,7 @@
   ]},
 { "hdr": "DA60", "rax": "60", "cmd": {"22": "7022"}, "freq": 30, "dbgfilter": { "to": 2016, "years": [2018, 2021, 2022], "from": 2026 },
   "signals": [
-    {"id": "PILOT_ODO_V3", "path": "Trips", "fmt": {"bix": 48, "len": 24, "max": 200000, "unit": "miles" }, "name": "Odometer, variation 3"}
+    {"id": "PILOT_ODO_V3", "path": "Trips", "fmt": {"bix": 48, "len": 24, "max": 16777215, "unit": "miles" }, "name": "Odometer, variation 3"}
   ]},
 { "hdr": "DA60", "rax": "60", "cmd": {"22": "7028"}, "freq": 5, "filter": { "to": 2019, "from": 2021 }, "dbgfilter": { "to": 2016, "years": [2018, 2021, 2022], "from": 2026 },
   "signals": [
