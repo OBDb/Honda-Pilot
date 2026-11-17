@@ -3,8 +3,6 @@ test_cases:
 - expected_values:
     PILOT_TP_FL: 200
     PILOT_TP_FR: 202
-    PILOT_TP_RL: 998
-    PILOT_TP_RR: 998
     PILOT_TT_FL: -19
     PILOT_TT_FR: -18
     PILOT_TT_RL: 0
@@ -41,8 +39,6 @@ test_cases:
 - expected_values:
     PILOT_TP_FL: 209
     PILOT_TP_FR: 207
-    PILOT_TP_RL: 998
-    PILOT_TP_RR: 998
     PILOT_TT_FL: -13
     PILOT_TT_FR: -14
     PILOT_TT_RL: 0
@@ -191,7 +187,6 @@ test_cases:
     18DAF1262700000000000000
     18DAF1262800000000555555
 - expected_values:
-    PILOT_TP_FL: 998
     PILOT_TP_FR: 225
     PILOT_TP_RL: 221
     PILOT_TP_RR: 224
@@ -325,7 +320,6 @@ test_cases:
     18DAF1262800000000555555
 - expected_values:
     PILOT_TP_FL: 199
-    PILOT_TP_FR: 998
     PILOT_TP_RL: 199
     PILOT_TP_RR: 199
     PILOT_TT_FL: -20

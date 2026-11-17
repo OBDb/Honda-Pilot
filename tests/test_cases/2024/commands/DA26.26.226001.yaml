@@ -268,7 +268,6 @@ test_cases:
     18DAF1262800000000555555
 - expected_values:
     PILOT_TP_FL: 222
-    PILOT_TP_FR: 998
     PILOT_TP_RL: 218
     PILOT_TP_RR: 221
     PILOT_TT_FL: 10
